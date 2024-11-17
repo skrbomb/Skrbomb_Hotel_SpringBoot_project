@@ -1,7 +1,7 @@
 # *__Skrbomb-Hotel-booking-and-management__*
 
 ## A Hotel booking and management platform
-Spring Boot, Spring Security, SpringData JPA , MSQL
+Spring Boot, Spring Security, SpringData JPA , MSQL , JWT
 
 ### Homepage
 ![image](https://github.com/user-attachments/assets/f0c05756-664a-41e1-9ad5-aee3cfe9e817)
