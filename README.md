@@ -13,67 +13,74 @@ Spring Boot, Spring Security, SpringData JPA , MSQL , JWT
 
 ## Postman API Test
 /auth/register <br />
-ROLE_ADMIN 
+ROLE_ADMIN  註冊管理員權限帳號
 
 ![image](https://github.com/user-attachments/assets/440d97cc-e160-4955-aae6-ea185bdbe5c9)
 
 
 /auth/register  <br />
-普通人註冊時自動戴上ROL_USER
+普通用戶註冊時自動戴上ROL_USER
 
 ![image](https://github.com/user-attachments/assets/fb985ad6-46c7-47c7-9cf1-ef488c478c73)
 
 /auth/login <br />
-ROLE_USER login 
+ROLE_USER login 登入普通用戶
 
 ![image](https://github.com/user-attachments/assets/82a10289-f520-40ea-89fd-e1e09c9d41d9)
 
 /users/all <br />
-ROLE_USER 權限不足 403 forbidden <br />
+ROLE_USER 普通用戶權限不足 403 forbidden <br />
 必須要是 ROLE_ADMIN
 
 ![image](https://github.com/user-attachments/assets/b7dddc24-81e9-4d1a-9107-0fc7e58bd947)
 
 /users/all <br />
-ROLE_ADMIN 200 請求成功
+ROLE_ADMIN 200 請求所有用戶列表成功
 
 ![image](https://github.com/user-attachments/assets/5c8fa610-5ebd-4bbb-8080-0c9de6c7e699)
 
 /auth/login
-ROLE_ADMIN LOGIN
+ROLE_ADMIN LOGIN  登入管理員權限帳號
 
 ![image](https://github.com/user-attachments/assets/5ea2db62-a216-495f-8af8-1b888dbc5d8b)
 
-/users/get-by-id/1
+/users/get-by-id/1 取得ID=1的用戶訊息
 
 ![image](https://github.com/user-attachments/assets/3b16e230-9e01-471f-86f3-aeac93340054)
 
-/users/get-logged-in-profile-info
+/users/get-logged-in-profile-info <br/> 
+取得當下登入的帳號資訊
 
 ![image](https://github.com/user-attachments/assets/e21420a2-4179-47d5-a1b2-0c4fcf934ea5)
 
 ![image](https://github.com/user-attachments/assets/80537f86-c9d6-4503-8931-83c9fef5c3b2)
 
-/users/get-user-bookings/1
+/users/get-user-bookings/1 <br/>
+取得用戶歷史訂單紀錄
 
 ![image](https://github.com/user-attachments/assets/a2de6966-7c4f-4b51-87de-194873c7dd7c)
 
-/users/delete/3
+/users/delete/3 <br/>
+刪除用戶
+
 ![image](https://github.com/user-attachments/assets/8e23dbe6-b6bd-47e9-89f1-472fc5e16713)
 
 ![image](https://github.com/user-attachments/assets/bd87e3da-b143-46e0-9772-a41dcc84d449)
 
-/rooms/add
+/rooms/add <br/>
+新增房間
+
 ![image](https://github.com/user-attachments/assets/3ce3e27a-f273-43d4-98e2-5011d0993cdb)
 
 ![image](https://github.com/user-attachments/assets/8295169d-94cf-4f50-b04c-7830d4e1af5a)
 
-/rooms/types
+/rooms/types <br/>
+取得所有房間種類列表
 
 ![image](https://github.com/user-attachments/assets/ddd08acd-a8a9-48c3-b693-f2eb9881c027)
 
 /rooms/all <br />
-不用任何權限 任何人都可查詢
+取得所有房間列表 不用任何權限 任何人都可查詢
 
 ![image](https://github.com/user-attachments/assets/2d63db0e-8b10-4244-b487-aba817242e49)
 
