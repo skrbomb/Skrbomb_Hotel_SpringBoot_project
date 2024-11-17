@@ -19,7 +19,7 @@ ROLE_ADMIN  註冊管理員權限帳號
 
 
 /auth/register  <br />
-普通用戶註冊時自動戴上ROL_USER
+普通用戶註冊時自動戴上ROLE_USER
 
 ![image](https://github.com/user-attachments/assets/fb985ad6-46c7-47c7-9cf1-ef488c478c73)
 
